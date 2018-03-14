@@ -16,12 +16,10 @@ import com.parse.SaveCallback;
 public class BaseObject extends ParseObject {
 
     protected Context mContext;
-    protected String mName;
 
-    public BaseObject(String className) {
-        super(className);
+    public BaseObject() {
         mContext = LabApplication.getContext();
-        mName = className;
+
     }
 
     public void save(final Callback callback) {

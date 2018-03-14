@@ -21,7 +21,7 @@ public abstract class LabApplication extends Application {
     }
 
     public static boolean storeLocalData() {
-        return false;
+        return true;
     }
 
     public static Context getContext() {
