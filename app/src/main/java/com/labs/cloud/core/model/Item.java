@@ -69,6 +69,10 @@ public class Item extends BaseModel {
         return this.mPrice;
     }
 
+    public void setPrice(int price) {
+        this.mPrice = price;
+    }
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(getId());
